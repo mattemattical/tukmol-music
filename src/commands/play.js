@@ -49,7 +49,7 @@ new Discord.ButtonBuilder()
 .setStyle(Discord.ButtonStyle.Secondary)
 .setCustomId("skip"),
 new Discord.ButtonBuilder()
-.setEmoji("🌀")
+.setEmoji("🔁")
 .setStyle(Discord.ButtonStyle.Secondary)
 .setCustomId("loop"),
 new Discord.ButtonBuilder()
