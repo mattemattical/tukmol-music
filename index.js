@@ -122,7 +122,7 @@ interaction.reply({content: "Bassboost online!", ephemeral: true})
     const embed = new Discord.EmbedBuilder()
         .setColor('Purple')
         .setDescription(`**[${queue.songs[0].name}](${queue.songs[0].url})**`)
-        .setImage(`${queue.songs[0].thumbnail}`)
+        
         .addFields({ name: 'Music Author:', value: `[${queue.songs[0].uploader.name}](${queue.songs[0].uploader.url})`, inline: true })
         .addFields({ name: 'Member:', value: `${queue.songs[0].user}`, inline: true })
         .addFields({ name: 'Voice:', value: `${queue.volume}%`, inline: true })
@@ -257,7 +257,7 @@ new Discord.ButtonBuilder()
 .setStyle(Discord.ButtonStyle.Secondary)
 .setCustomId("skip"),
 new Discord.ButtonBuilder()
-.setEmoji("🌀")
+.setEmoji("🔁")
 .setStyle(Discord.ButtonStyle.Secondary)
 .setCustomId("loop"),
 new Discord.ButtonBuilder()
@@ -296,7 +296,7 @@ const row2 = new Discord.ActionRowBuilder()
 
 const modal = new Discord.ModalBuilder()
 .setCustomId('form')
-.setTitle('Tukmol - Music Bot!')
+.setTitle('RTR 2.0 Sounds!')
   const a1 = new Discord.TextInputBuilder()
   .setCustomId('setvolume')
   .setLabel('Volume')
@@ -330,4 +330,7 @@ client.on('interactionCreate', async interaction => {
      interaction.reply("Successfully set the volume of the music to **"+volume+"**")
 }
 })
+
+
+
 client.login(token)
